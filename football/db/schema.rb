@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150202002550) do
+ActiveRecord::Schema.define(version: 20150202154558) do
 
   create_table "cities", force: :cascade do |t|
     t.text    "name"
@@ -33,12 +33,12 @@ ActiveRecord::Schema.define(version: 20150202002550) do
 
   create_table "games", force: :cascade do |t|
     t.datetime "quoted_date"
-    t.integer  "home_team"
-    t.integer  "away_team"
+    t.integer  "home_team_id"
+    t.integer  "away_team_id"
     t.integer  "home_score"
     t.integer  "away_score"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.string   "external_id"
   end
 
