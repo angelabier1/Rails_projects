@@ -43,7 +43,12 @@ group :development, :test do
   gem 'spring'
 end
 
- gem 'sports_data_api', git: 'https://github.com/TheIronYard--Orlando/sports_data_api.git'
- gem 'better_errors'
- gem 'binding_of_caller'
- gem 'jazz_hands'
+  gem 'sports_data_api', git: 'https://github.com/TheIronYard--Orlando/sports_data_api.git'
+  gem 'better_errors'
+ # gem 'binding_of_caller'
+ #gem 'jazz_hands'
+ gem 'devise'
+ gem 'httparty'
+gem 'awesome_print'
+gem 'pry-rails', :group => :development
+gem 'hashie'
