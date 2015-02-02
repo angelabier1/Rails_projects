@@ -11,4 +11,12 @@ class Game < ActiveRecord::Base
 		end
 	end
 
+
+	def winner
+	 if home_score > away_score
+		 home_team
+	 else
+		 away_team
+   end
+	end
 end

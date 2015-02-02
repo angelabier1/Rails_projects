@@ -2,7 +2,7 @@ class Team < ActiveRecord::Base
 	belongs_to :city
 	has_one :coach
 	validates :name, uniqueness: true
-	validates :conference,  :division, :name, presence: true
+	validates :conference, :division, :name, presence: true
 	validates :no_naughty_names, :name, presence: true
 	has_many :home_games, class_name: "Game", foreign_key: "home_team_id"
 	has_many :away_games, class_name: "Game", foreign_key: "away_team_id"
@@ -30,4 +30,6 @@ class Team < ActiveRecord::Base
 			"#{city} #{name}"
 		end
 	end
+
+
 end
