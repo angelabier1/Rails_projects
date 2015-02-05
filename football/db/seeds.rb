@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-SportsDataApi.set_key(:nfl, 'vv9bqqx9px4xuzt79vcabvjj')
+SportsDataApi.set_key(:nfl, '2fhaxup3q39q26atwekyfqej')
 
 schedule = SportsDataApi::Nfl.schedule(2014,:REG)
 
